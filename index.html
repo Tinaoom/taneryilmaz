@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    
+      .panel {
+        display: none;
+        padding: 20px;
+        background-color: #a7a7e4;
+        margin-top: 10px;
+      }
+    
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    </style>
+    <style>
+        #toggle-button {
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      
+        #toggle-list {
+          display: none;
+          position: fixed;
+          top: 50px;
+          left: 20px;
+          background-color: burlywood;
+          border: 1px solid;
+          padding: 10px;
+          max-width: 200px;
+          z-index: 1;
+        }
+        #toggle-list li {
+    font-size: 20px; /* Yazıyı büyütmek için */
+  }
+      </style>
+      
+</head> 
+<body>
+    <div class="container">
+        <button onclick="togglePanel('hobilerim')">Hobilerim</button>
+        <button onclick="togglePanel('gezdigimyerler')">Gezdiğim Yerler</button>
+        <button onclick="togglePanel('kisiselbilgiler')">Kişisel Bilgiler</button>
+      
+        <div id="hobilerim" class="panel">
+          <ul>
+            <h4>
+              <li>Futbol
+                <div class="container">
+                    <img src="bjk.jpg" class="resim" width="700" height="500" >
+
+                </div>
+                
+              </li><br>
+              <li>Fitness</li><br>
+              <div class="container">
+                <img src="fit.jpeg" class="resim" width="700"height="500">
+              </div>
+              
+            </h4>
+              
+            </ul>
+
+         
+          
+        </div>
+      
+        <div id="gezdigimyerler" class="panel">
+            <ul>
+                <h4>
+                  <li>Hatay
+                    <div class="container">
+                        <img src="hat.jpg" class="resim" width="700" height="500" >
+    
+                    </div>
+                    
+                  </li><br>
+                  <li>Mersin</li><br>
+                  <div class="container">
+                    <img src="mer.jpg" class="resim" width="700"height="500">
+                  </div>
+                  <li>Adana</li><br>
+                  <div class="container">
+                    <img src="adana.jpg" class="resim" width="700"height="500">
+                  </div>
+                </li><br>
+                <li>Ankara</li><br>
+                <div class="container">
+                  <img src="ank.jpeg" class="resim" width="700"height="500">
+                </div>
+                  
+                </h4>
+                  
+                </ul>
+    
+        </div>
+      
+        <div id="kisiselbilgiler" class="panel">
+          <h2>Kişisel Bilgiler</h2>
+          <p>Buraya kişisel bilgilerinizi ekleyebilirsiniz.</p>
+        </div>
+      </div>
+      
+      <script>
+        function togglePanel(panelId) {
+          var panel = document.getElementById(panelId);
+          if (panel.style.display === "none") {
+            panel.style.display = "block";
+          } else {
+            panel.style.display = "none";
+          }
+        }
+      </script>
+    <div class="box">
+        <img src="benim2.jpg" width="300">
+        <h1>Taner Yılmaz</h1>
+        <h5>Bilgisayar Mühendisliği</h5>
+        <p>Afyonkacetepe Üniversitesinde okumaktadır</p>
+        <ul>
+            <li><a href="https://www.instagram.com/frozturk003" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" ><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+   
+
+   
+    
+</body>
+</html>
